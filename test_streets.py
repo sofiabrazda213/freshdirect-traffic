@@ -11,24 +11,26 @@ API_KEY = os.environ["TOMTOM_API_KEY"]
 # Candidate points to test around Port Morris.
 # These are NOT yet verified street locations.
 
+
 POINTS = {
-    "E 132nd near warehouse": (40.8017, -73.9170),
-    "E 133rd area": (40.8025, -73.9155),
-    "E 134th area": (40.8033, -73.9140),
-    "E 135th area": (40.8040, -73.9125),
-    "E 136th area": (40.8047, -73.9110),
-    "E 137th area": (40.8054, -73.9095),
-    "E 138th area": (40.8045, -73.9095),
-    "Walnut Ave area": (40.8020, -73.9080),
-    "Locust Ave area": (40.8010, -73.9065),
-    "Port Morris west": (40.8005, -73.9140),
-    "Port Morris east": (40.8015, -73.9100),
+    # NEAR FRESHDIRECT — existing test points
+    "Near - E 132nd": (40.8017, -73.9170),
+    "Near - E 133rd": (40.8025, -73.9155),
+    "Near - E 134th": (40.8033, -73.9140),
+    "Near - E 136th": (40.8047, -73.9110),
+
+    # COMPARISON AREA — candidate points farther away
+    # These are NOT verified street segments yet.
+    "Compare - west 1": (40.8090, -73.9260),
+    "Compare - west 2": (40.8110, -73.9230),
+    "Compare - north 1": (40.8140, -73.9190),
+    "Compare - north 2": (40.8160, -73.9160),
 }
 
 URL = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/18/json"
 OUTPUT = Path("freshdirect_traffic.csv")
 FIELDS = [
-    "timestamp", "candidate", "query_lat", "query_lon", "status",
+    "timestamp", "candidate", "query_lat", "query_lon", "status", "road_class",
     "current_speed_kmh", "free_flow_speed_kmh", "current_travel_seconds",
     "free_flow_seconds", "delay_percent", "matched_start_lat",
     "matched_start_lon", "matched_end_lat", "matched_end_lon", "error",
@@ -54,6 +56,7 @@ def collect():
                 free = data.get("freeFlowTravelTime")
                 row.update(
                     status="ok",
+                    road_class=data.get("frc", ""),
                     current_speed_kmh=data.get("currentSpeed", ""),
                     free_flow_speed_kmh=data.get("freeFlowSpeed", ""),
                     current_travel_seconds=current,
