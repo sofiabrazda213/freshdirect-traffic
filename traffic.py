@@ -6,9 +6,12 @@ from zoneinfo import ZoneInfo
 
 API_KEY = os.environ["TOMTOM_API_KEY"]
 
-# Initial test point, not yet verified as a warehouse-adjacent road
 ROADS = {
-    "Port Morris test": (40.805, -73.915)
+    "E 132nd St test": (40.8017, -73.9170),
+    "E 134th St test": (40.8030, -73.9095),
+    "Walnut Ave test": (40.8020, -73.9080),
+    "Locust Ave test": (40.8010, -73.9065),
+    "Port Morris test": (40.8005, -73.9140)
 }
 
 url = (
