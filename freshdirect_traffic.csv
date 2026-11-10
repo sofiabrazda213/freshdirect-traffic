@@ -1,15 +1,15 @@
-timestamp,candidate,query_lat,query_lon,status,current_speed_kmh,free_flow_speed_kmh,current_travel_seconds,free_flow_seconds,delay_percent,matched_start_lat,matched_start_lon,matched_end_lat,matched_end_lon,error
-2026-11-09T18:02:44-05:00,E 132nd near warehouse,40.8017,-73.917,ok,66,66,28,28,0.0,40.801924479546585,-73.91687667321341,40.7978529116453,-73.91986331295219,
-2026-11-09T18:02:44-05:00,E 133rd area,40.8025,-73.9155,ok,29,53,34,18,88.9,40.802113620009614,-73.91651457499631,40.80347483171769,-73.9138296837718,
-2026-11-09T18:02:44-05:00,E 134th area,40.8033,-73.914,ok,9,24,111,41,170.7,40.80312612460091,-73.91460350107278,40.80447659311739,-73.91183546136874,
-2026-11-09T18:02:44-05:00,E 135th area,40.804,-73.9125,ok,9,24,111,41,170.7,40.80312612460091,-73.91460350107278,40.80447659311739,-73.91183546136874,
-2026-11-09T18:02:44-05:00,E 136th area,40.8047,-73.911,ok,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
-2026-11-09T18:02:44-05:00,E 137th area,40.8054,-73.9095,ok,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
-2026-11-09T18:02:44-05:00,E 138th area,40.8045,-73.9095,ok,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
-2026-11-09T18:02:44-05:00,Walnut Ave area,40.802,-73.908,HTTP 400,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
-2026-11-09T18:02:44-05:00,Locust Ave area,40.801,-73.9065,HTTP 400,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
-2026-11-09T18:02:44-05:00,Port Morris west,40.8005,-73.914,HTTP 400,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
-2026-11-09T18:02:44-05:00,Port Morris east,40.8015,-73.91,HTTP 400,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
+timestamp,candidate,query_lat,query_lon,status,road_class,current_speed_kmh,free_flow_speed_kmh,current_travel_seconds,free_flow_seconds,delay_percent,matched_start_lat,matched_start_lon,matched_end_lat,matched_end_lon,error
+2026-11-09T18:02:44-05:00,E 132nd near warehouse,40.8017,-73.917,ok,,66,66,28,28,0.0,40.801924479546585,-73.91687667321341,40.7978529116453,-73.91986331295219,
+2026-11-09T18:02:44-05:00,E 133rd area,40.8025,-73.9155,ok,,29,53,34,18,88.9,40.802113620009614,-73.91651457499631,40.80347483171769,-73.9138296837718,
+2026-11-09T18:02:44-05:00,E 134th area,40.8033,-73.914,ok,,9,24,111,41,170.7,40.80312612460091,-73.91460350107278,40.80447659311739,-73.91183546136874,
+2026-11-09T18:02:44-05:00,E 135th area,40.804,-73.9125,ok,,9,24,111,41,170.7,40.80312612460091,-73.91460350107278,40.80447659311739,-73.91183546136874,
+2026-11-09T18:02:44-05:00,E 136th area,40.8047,-73.911,ok,,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
+2026-11-09T18:02:44-05:00,E 137th area,40.8054,-73.9095,ok,,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
+2026-11-09T18:02:44-05:00,E 138th area,40.8045,-73.9095,ok,,22,32,48,33,45.5,40.80447659311739,-73.91183546136874,40.805906213495064,-73.90887027930209,
+2026-11-09T18:02:44-05:00,Walnut Ave area,40.802,-73.908,HTTP 400,,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
+2026-11-09T18:02:44-05:00,Locust Ave area,40.801,-73.9065,HTTP 400,,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
+2026-11-09T18:02:44-05:00,Port Morris west,40.8005,-73.914,HTTP 400,,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
+2026-11-09T18:02:44-05:00,Port Morris east,40.8015,-73.91,HTTP 400,,,,,,,,,,,"{""error"":""Point too far from nearest existing segment."",""httpStatusCode"":400,""detailedError"":{""code"":""INVALID_REQUEST"",""message"":""Point too far from n"
 2026-11-09T19:24:46-05:00,Near - E 132nd,40.8017,-73.917,ok,FRC0,66,66,28,28,0.0,40.801924479546585,-73.91687667321341,40.7978529116453,-73.91986331295219,
 2026-11-09T19:24:46-05:00,Near - E 133rd,40.8025,-73.9155,ok,FRC4,53,53,18,18,0.0,40.802113620009614,-73.91651457499631,40.80347483171769,-73.9138296837718,
 2026-11-09T19:24:46-05:00,Near - E 134th,40.8033,-73.914,ok,FRC6,24,24,41,41,0.0,40.80312612460091,-73.91460350107278,40.80447659311739,-73.91183546136874,
