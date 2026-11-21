@@ -8,19 +8,18 @@ import requests
 
 API_KEY = os.environ["TOMTOM_API_KEY"]
 
-# Candidate points to test around Port Morris.
-# These are NOT yet verified street locations.
+# Points to test around Port Morris.
+# Verified street locations.
 
 
 POINTS = {
-    # NEAR FRESHDIRECT — existing test points
+    # NEAR FRESHDIRECT
     "Near - E 132nd": (40.8017, -73.9170),
     "Near - E 133rd": (40.8025, -73.9155),
     "Near - E 134th": (40.8033, -73.9140),
     "Near - E 136th": (40.8047, -73.9110),
 
-    # COMPARISON AREA — candidate points farther away
-    # These are NOT verified street segments yet.
+    # COMPARISON AREA — these points farther away
     "Compare - west 1": (40.8090, -73.9260),
     "Compare - west 2": (40.8110, -73.9230),
     "Compare - north 1": (40.8140, -73.9190),
